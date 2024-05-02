@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .second{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="first">
+        this is      <b>para of the first div</b> 
+        <div class="second">
+            this is the para of the second div
+            <div class="third">
+                this the para of the third div
+            </div>
+        </div>
+    </div>
+    
+    <script>
+   let content = document.querySelector('.first');
+let firstChild = content.firstChild.nodeName;
+console.log(firstChild);
+    </script>
+</body>
+</html>
